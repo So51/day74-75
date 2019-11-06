@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Window or tab ?</title>
+<style >
+.gfg {
+text-align : center ;
+font : 150px;
+color : blue ;
+}
+</style>
+<center>
+<button onclick="openWin()">Open "NewWindow"</button>
+<button onclick="Newtab()">Open "New Tab"</button>
+</center>
+<script>
+var myWindow;
+function openWin(){
+myWindow = window.open("https://saudidev.org", "myWindow", "width=250 , height=250");
+myWindow.document.write("<p>this is 'NewWindow'</p>");
+}
+function Newtab (){ window.open( "https://saudidev.org " ,"_blank");
+}
+</script>
+</head>
+<body>
+<div class = "gfg" onmouseover = "myPage()">
+Saudidevorg
+</div>
+</body>
+</html>
